@@ -1,0 +1,46 @@
+
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+nav{
+    /* border: 1px solid black; */
+    max-width: 1140px;
+    margin: 0 auto;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-anchors > ul{
+    /* border: 1px solid black; */
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+.nav-anchors > ul > li:first-child{
+    font-weight: bold;
+    color: rgba(37, 36, 50, 1);
+}
+.nav-anchors > ul > li:nth-child(2), .nav-anchors > ul > li:nth-child(3){
+    color: rgba(137, 135, 161, 1);
+}
+/* media queries: iphone 14 & 15 pro */
+@media screen and (max-width: 576px){
+    nav{
+        max-width: 361px;
+    }
+    .nav-anchors > ul > li:nth-child(1), .nav-anchors > ul > li:nth-child(2), .nav-anchors > ul > li:nth-child(3){
+    display: none;
+}
+}
