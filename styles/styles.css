@@ -195,8 +195,9 @@ nav{
     } */
     /* navbar section */
     nav{
-        max-width: 361px;
-        margin-bottom: 28px;
+        /* max-width: 361px; */
+        /* margin-bottom: 28px; */
+        margin: 13px 16px 28px;
     }
     .nav-anchors > ul > li:nth-child(1), .nav-anchors > ul > li:nth-child(2), .nav-anchors > ul > li:nth-child(3){
     display: none;
@@ -208,9 +209,9 @@ nav{
         gap: 28px;
     }
     .banner > img{
-        max-width: 394px; 
-        max-height: 245px;
-        /* width: 100%; */
+        /* max-width: 394px;  */
+        width: 100%;
+        max-height: 245px;        
     }
     .banner-txt{
         margin: 0 16px;
@@ -236,12 +237,11 @@ nav{
     }
     .plants-cards{
         grid-template-columns: repeat(2,1fr);
-        padding: 0 16px;
-        /* column-gap: 0px; */
+        margin: 0 16px;        
     }
-    .card{
-        max-width: 188px;
-        
+    
+    .card > img{
+        width: 100%;
     }
     .card-content > div > h3, .card-content > button{
         font-size: 1rem;
