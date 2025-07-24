@@ -18,13 +18,28 @@
 }
 
 /* font weight & size */
+.medium{
+    font-weight: 500;
+}
+.semi-bold{
+    font-weight: 600;
+}
+.bold{
+    font-weight: bold;
+}
+.bold-50{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
 .bold-64{
     font-size: 4rem;
     font-weight: bold;
 }
+
 .font-22{
     font-size: 1.375rem;
 }
+
 
 
 /* colors */
@@ -43,7 +58,7 @@ span{
 
 /* navbar */
 nav{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     max-width: 1140px;
     margin: 0 auto;    
     display: flex;
@@ -68,7 +83,7 @@ nav{
 
 /* banner */
 .banner{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
@@ -97,10 +112,84 @@ nav{
     margin: 0;
 }
 
+/* plants */
+.plants{
+    max-width: 1140px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+    margin-bottom: 210px;
+}
+.plants-txt{
+    text-align: center;
+    margin-bottom: 50px;
+    /* border: 1px solid black; */
+}
+.plants-txt > p{
+    /* border: 1px solid black; */
+    margin: 0 126px;
+}
+.card{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.card-content{
+    text-align: center;
+}
+.card-content > div{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn-cards{
+    margin-top: 30px;
+    /* padding: 19px 80px; */
+    padding: 19px 0;
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: rgba(233, 90, 8, 1);
+}
+.plants-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+
+/* plants lover */
+.plants-lover{
+    /* border: 1px solid black; */
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    flex: 1;
+    margin-bottom: 132px;
+
+}
+.plants-lover-txt{
+    /* border: 1px solid black; */
+    margin: 38px auto;
+}
+.trusted-badge{
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    transform: translate(350px, -130px);;
+}
 
 
 /* media queries: iphone 14 & 15 pro */
 @media screen and (max-width: 576px){
+    /* *{
+        margin: 0;
+    } */
+    /* navbar section */
     nav{
         max-width: 361px;
         margin-bottom: 28px;
@@ -108,7 +197,7 @@ nav{
     .nav-anchors > ul > li:nth-child(1), .nav-anchors > ul > li:nth-child(2), .nav-anchors > ul > li:nth-child(3){
     display: none;
     }
-
+    /* banner section */
     .banner{
         margin-bottom: 65px;
         flex-direction: column-reverse;
@@ -125,7 +214,53 @@ nav{
     .banner-txt > h1{
         font-size: 1.5rem;
     }
+    
     .banner-txt > p{
         font-size: 0.9rem;
+    }
+
+    /* plants section */
+    .plants{
+        margin-bottom: 42px;
+    }
+    .plants-txt > h1{
+        font-size: 1.5rem;
+    }
+    .plants-txt > p{
+        font-size: 0.9rem;
+        margin: 0 28px;
+    }
+    .plants-cards{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 16px;
+        /* column-gap: 0px; */
+    }
+    .card{
+        max-width: 188px;
+        
+    }
+    .card-content > div > h3, .card-content > button{
+        font-size: 1rem;
+    }
+
+    /* plants lover section */
+    .plants-lover{
+        flex-direction: column;
+        gap: 18px;
+        margin: 0 16px;
+        margin-bottom: 142px;
+    }
+    .trusted-badge{
+        display: none;
+    }
+    .plants-lover-txt{
+        margin: 0;
+    }
+    .plants-lover-txt > h1{
+        font-size: 1.5rem;
+    }
+    .plants-lover-txt > ul{
+        font-size: 0.9rem;
+        padding-left: 24px;
     }
 }
