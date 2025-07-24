@@ -176,6 +176,9 @@ nav{
     /* border: 1px solid black; */
     margin: 38px auto;
 }
+.plants-lover-txt > ul > li{
+    margin-bottom: 20px;
+}
 .trusted-badge{
     width: 286px;
     height: 286px;
@@ -263,5 +266,8 @@ nav{
     .plants-lover-txt > ul{
         font-size: 0.9rem;
         padding-left: 24px;
+    }
+    .plants-lover-txt > ul > li{
+    margin-bottom: 16px;
     }
 }
