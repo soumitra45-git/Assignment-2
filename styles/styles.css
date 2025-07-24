@@ -180,7 +180,8 @@ nav{
     width: 286px;
     height: 286px;
     position: absolute;
-    transform: translate(350px, -130px);;
+    transform: translate(350px, -130px);
+    filter: drop-shadow(-4px 10px 2px rgba(0, 0, 0, 0.25));
 }
 
 
