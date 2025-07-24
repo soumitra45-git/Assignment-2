@@ -1,4 +1,6 @@
-
+*{
+    margin: 0;
+}
 .inter-normal {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -14,13 +16,41 @@
   font-variation-settings:
     "wdth" 100;
 }
+
+/* font weight & size */
+.bold-64{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.font-22{
+    font-size: 1.375rem;
+}
+
+
+/* colors */
+.color-orange{
+    color: rgba(233, 90, 8, 1);
+}
+.ash-txt{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* shared styles */
+span{
+    color: rgba(233, 90, 8, 1);
+}
+
+
+/* navbar */
 nav{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     max-width: 1140px;
     margin: 0 auto;    
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 120px;
+    margin-top: 30px;
 }
 .nav-anchors > ul{
     /* border: 1px solid black; */
@@ -35,12 +65,67 @@ nav{
 .nav-anchors > ul > li:nth-child(2), .nav-anchors > ul > li:nth-child(3){
     color: rgba(137, 135, 161, 1);
 }
+
+/* banner */
+.banner{
+    border: 1px solid black;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex: 1;
+    align-items: end;
+    margin-bottom: 120px;
+}
+.banner-txt{
+    /* border: 2px solid rgb(0, 215, 253); */
+    /* margin-top: 162px; */
+    padding: 0;
+    max-height: 300px;
+    
+    
+}
+.banner-txt > h1, .banner-txt > p{
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    
+    
+}
+.banner > img{
+    /* border: 1px solid black; */
+    /* max-height: 355px;
+    margin-top: 106px; */
+    margin: 0;
+}
+
+
+
 /* media queries: iphone 14 & 15 pro */
 @media screen and (max-width: 576px){
     nav{
         max-width: 361px;
+        margin-bottom: 28px;
     }
     .nav-anchors > ul > li:nth-child(1), .nav-anchors > ul > li:nth-child(2), .nav-anchors > ul > li:nth-child(3){
     display: none;
-}
+    }
+
+    .banner{
+        margin-bottom: 65px;
+        flex-direction: column-reverse;
+        gap: 28px;
+    }
+    .banner > img{
+        max-width: 394px; 
+        max-height: 245px;
+        /* width: 100%; */
+    }
+    .banner-txt{
+        margin: 0 16px;
+    }
+    .banner-txt > h1{
+        font-size: 1.5rem;
+    }
+    .banner-txt > p{
+        font-size: 0.9rem;
+    }
 }
